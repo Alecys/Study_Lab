@@ -1,0 +1,220 @@
+-------------------------------
+ESTRUTURA
+
+meu-projeto/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── utils/
+│   └── main.ts
+│
+├── public/
+│
+├── tests/
+│
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── eslint.config.js
+├── prettier.config.js
+├── README.md
+└── .env.example
+
+-------------------------------
+VS CODE
+
+Profiles
+Extensions
+Settings
+Workspace settings
+Terminal integrado
+Source Control
+Debugger
+Tasks
+settings.json
+extensions.json
+
+ESLint
+Prettier
+GitLens (opcional)
+Error Lens (opcional)
+
+-------------------------------
+NODE.JS
+
+Node.js
+
+Aqui começa a ficar interessante.
+
+Você precisa entender:
+
+Node.js
+   ↓
+npm
+   ↓
+package.json
+   ↓
+node_modules
+   ↓
+scripts
+   ↓
+dependências
+
+Por exemplo:
+
+npm init
+
+depois:
+
+npm install
+
+e entender:
+
+{
+  "scripts": {
+    "dev": "...",
+    "build": "...",
+    "test": "..."
+  }
+}
+
+
+-------------------------------
+Vite
+
+-------------------------------
+GIT
+Não apenas:
+
+git add .
+git commit
+git push
+
+Mas entender o fluxo:
+
+Working Directory
+       ↓
+git add
+       ↓
+Staging Area
+       ↓
+git commit
+       ↓
+Local Repository
+       ↓
+git push
+       ↓
+GitLab/GitHub
+
+E depois:
+
+branch
+   ↓
+feature
+   ↓
+commit
+   ↓
+push
+   ↓
+merge request / pull request
+
+-------------------------------
+ESTRUTUTA
+
+ESLint
+
+"Meu código está seguindo determinadas regras?"
+
+Prettier
+
+"Meu código está formatado consistentemente?"
+
+Git
+
+"O que mudou?"
+
+TypeScript
+
+"Os tipos fazem sentido?"
+
+Tests
+
+"Isso continua funcionando?"
+
+Aí você começa a sair de:
+
+"Eu consigo fazer funcionar."
+
+para:
+
+"Eu consigo manter isso."
+
+E essa diferença é enorme.
+
+-------------------------------
+React
+
+Aí sim:
+
+HTML
+CSS
+JavaScript
+   ↓
+TypeScript
+   ↓
+Vite
+   ↓
+React
+
+E então:
+
+Components
+Props
+State
+Events
+Hooks
+Forms
+API
+Routing
+
+Depois disso você começa a olhar para:
+
+Next.js
+Tailwind
+React Query
+Zustand
+etc.
+
+Não precisa aprender tudo.
+
+
+-------------------------------
+IA
+
+Fundamentos
+      ↓
+Ferramentas
+      ↓
+Git
+      ↓
+TypeScript
+      ↓
+React
+      ↓
+APIs
+      ↓
+Backend
+      ↓
+Testes
+      ↓
+Deploy
+      ↓
+              🤖 IA
+
+
+-------------------------------
+
+
+

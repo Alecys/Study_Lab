@@ -1,0 +1,24 @@
+# Checklist do Projeto
+
+- [ ] VS Code
+- [ ] Node.js
+- [ ] npm / pnpm
+- [ ] package.json
+- [ ] Git
+- [ ] GitHub / GitLab
+- [ ] ESLint
+- [ ] Prettier
+- [ ] TypeScript
+- [ ] Vite
+- [ ] HTML
+- [ ] CSS
+- [ ] JavaScript
+- [ ] React
+- [ ] API
+- [ ] testes
+- [ ] build
+- [ ] deploy
+- [ ] CI/CD
+- [ ] Docker
+- [ ] banco de dados
+- [ ] IA
