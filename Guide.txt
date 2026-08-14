@@ -258,5 +258,62 @@ Production
 -------------------------------
 FRAMEWORKS
 
+/estudos
+   /git
+   /github
+   /javascript
+   /typescript
+   /node
+   /docker
+   /react
 
+/projetos
+   /projeto-01
+   /projeto-02
+
+/docs
+   ambiente.md
+   git.md
+   docker.md
+   javascript.md
+
+/.devcontainer
+   devcontainer.json
+
+README.md
+package.json
+
+--------------------------------------
+
+Fase 8 — CI/CD + automação
+
+Finalmente:
+
+git push
+   ↓
+GitHub Actions
+   ↓
+testes
+   ↓
+build
+   ↓
+deploy
+   ↓
+GitHub Pages
+
+Aí você aprende uma parte muito importante do desenvolvimento profissional.
+
+------------------------------------------
+
+E vamos separar "estudei" de "dominei"
+
+-----------------------------------
+
+Primeiro:
+
+Aprender → experimentar → quebrar → entender → avaliar → documentar.
+
+Depois:
+
+Projetar → abstrair → integrar → testar → publicar.
 
