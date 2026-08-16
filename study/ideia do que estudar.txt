@@ -1,29 +1,3 @@
-           DESENVOLVIMENTO WEB MODERNO
-                           │
-        ┌──────────────────┼──────────────────┐
-        │                  │                  │
-    Ambiente             Código          Infraestrutura
-        │                  │                  │
-      VS Code          JS / TS             Docker
-      Node.js          HTML/CSS             Linux
-      npm/pnpm         React                Nginx
-      Git              APIs                 DNS
-      GitLab           testes               HTTPS
-        │                  │                  │
-        └──────────────────┼──────────────────┘
-                           │
-                    COLABORAÇÃO
-                           │
-                    Git + GitLab
-                           │
-                    CI/CD / Pipelines
-                           │
-                     Deploy
-                           │
-                       Cloud
-                           │
-                         IA
-
 -------------------------------
 ESTRUTURA
 
@@ -241,22 +215,6 @@ Deploy
 
 
 -------------------------------
-CLOUD 
-
-Local
-  ↓
-Docker
-  ↓
-Server
-  ↓
-Cloud
-  ↓
-CI/CD
-  ↓
-Production
-
--------------------------------
-FRAMEWORKS
 
 /estudos
    /git
@@ -316,4 +274,8 @@ Aprender → experimentar → quebrar → entender → avaliar → documentar.
 Depois:
 
 Projetar → abstrair → integrar → testar → publicar.
+
+-----------------------------------
+
+
 

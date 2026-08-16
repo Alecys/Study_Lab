@@ -1,0 +1,124 @@
+----------------------------------------------
+Não confunda:
+
+HTTP = protocolo
+REST = arquitetura/estilo
+fetch = API JavaScript
+SOP = SAME // política de segurança do navegador (não permite)
+CORS = CROSS // mecanismo/política de acesso entre origins (permite)
+
+
+São peças diferentes:
+
+Coisa	O que é
+HTTP	Protocolo de comunicação
+HTTPS	HTTP protegido por TLS
+Fetch	API JS para fazer requisições
+REST	Estilo para projetar APIs
+Origin	protocolo + host + porta
+SOP	Política de segurança do navegador
+CORS	Mecanismo para permitir acesso cross-origin
+
+----------------------------------------------
+
+14. Agora vamos juntar tudo
+
+Você pode pensar assim:
+
+API
+│
+│ "Como um software pode conversar comigo?"
+│
+├── Web API
+│      │
+│      ├── HTTP
+│      │     │
+│      │     ├── GET
+│      │     ├── POST
+│      │     ├── PUT
+│      │     ├── PATCH
+│      │     └── DELETE
+│      │
+│      └── URL
+│
+└── pode seguir REST
+       │
+       └── RESTful API
+
+E o cliente:
+
+JavaScript
+    │
+    └── fetch()
+          │
+          ▼
+        HTTP
+          │
+          ▼
+     REST API
+
+
+------------------------------------
+Web Services
+
+Web Services
+│
+├── REST
+├── SOAP
+└── outros estilos/protocolos
+
+------------------------------------
+
+  API é a interface; REST é uma forma de projetar uma API web; HTTP é o protocolo que transporta a comunicação; GET/POST/DELETE são métodos do HTTP; JSON é um formato de dados; e fetch() é uma ferramenta JavaScript para fazer as requisições.
+
+------------------------------------
+
+REST API:
+Cliente → HTTP → servidor
+
+SOAP:
+Cliente → HTTP → SOAP → servidor
+
+------------------------------------
+
+Arquitetura:
+
+React
+ ↓
+fetch()
+ ↓
+HTTP
+ ↓
+REST API
+ ↓
+Backend
+ ↓
+PostgreSQL
+
+--------------------------------------------------
+
+E aí, quando você pegar aquele projeto SOAP do Lattes novamente, vai conseguir enxergar:
+
+Lattes
+ │
+ ├── WSDL → contrato do serviço
+ │
+ ├── SOAP → protocolo/mensagem
+ │
+ ├── XML → representação da mensagem
+ │
+ └── HTTP → transporte
+
+Enquanto nosso Study_Lab será:
+
+Study_Lab
+ │
+ ├── REST → estilo arquitetural
+ │
+ ├── HTTP → protocolo
+ │
+ ├── JSON → representação dos dados
+ │
+ └── fetch → cliente JavaScript
+
+ ---------------------------------------------------------------

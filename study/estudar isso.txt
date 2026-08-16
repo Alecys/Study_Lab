@@ -1,0 +1,23 @@
+Por exemplo:
+
+Situação	Possível escolha
+Frontend web → backend	REST
+API pública simples	REST
+Integração corporativa formal	SOAP
+Sistema legado SOAP	SOAP
+Comunicação interna de alta performance	gRPC
+Consultas muito flexíveis	GraphQL
+Comunicação em tempo real	WebSocket
+Processamento assíncrono	Mensageria
+
+Não é uma regra absoluta, mas é um mapa mental muito mais próximo da realidade profissional.
+
+\/--------------------------------------------------------
+
+1️⃣ Quem vai consumir?
+Browser?
+Mobile?
+Outro backend?
+Banco?
+Governo?
+Sistema legado?
