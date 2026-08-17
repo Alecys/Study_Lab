@@ -1,0 +1,265 @@
+{
+  "project": {
+    "name": "Study_Lab",
+    "goal": "Construir um laboratório pessoal de estudos que evolui de documentação e site para uma aplicação completa, usando o próprio projeto para aprender desenvolvimento de software.",
+    "learning_cycle": [
+      "Aprender",
+      "Experimentar",
+      "Quebrar",
+      "Entender",
+      "Avaliar",
+      "Documentar"
+    ],
+    "mastery_rule": "100% significa domínio muito bom para o objetivo da etapa. Não é necessário atingir 100% em todos os assuntos para avançar."
+  },
+  "continuity_rules": {
+    "source_of_truth": "progress.json",
+    "chat_memory_role": "Manter continuidade, metas, roadmap e decisões importantes.",
+    "save_trigger": "Quando o usuário disser SAVE, criar/atualizar um checkpoint completo do estado atual.",
+    "resume_trigger": "Quando o usuário mencionar Study_Lab, SAVE, progress.json, roadmap, estado ou continuar de onde paramos, recuperar o estado oficial e seguir do próximo passo.",
+    "coherence": "Não misturar fases nem abandonar o roadmap. Assuntos novos podem ser estudados quando necessários, mas não devem alterar o objetivo ou a sequência sem decisão explícita.",
+    "file_naming_rule": "Sempre informar o nome e a extensão do arquivo quando fornecer conteúdo ou instruções para um arquivo."
+  },
+  "roadmap": [
+    {
+      "phase": 0,
+      "name": "Fundação",
+      "goal": "Organizar Git/GitHub e criar o projeto inicial.",
+      "status": "completed"
+    },
+    {
+      "phase": 1,
+      "name": "GitHub Pages",
+      "goal": "Criar o site de estudos simples, sem MkDocs/Python, usando HTML/CSS/JS e dados em JSON.",
+      "status": "in_progress"
+    },
+    {
+      "phase": 2,
+      "name": "Node.js + npm",
+      "goal": "Aprender Node.js, npm, package.json, node_modules, scripts, dependências e Vite.",
+      "status": "planned"
+    },
+    {
+      "phase": 3,
+      "name": "Dev Container + Docker",
+      "goal": "Criar ambiente de desenvolvimento reproduzível.",
+      "status": "planned"
+    },
+    {
+      "phase": 4,
+      "name": "GitHub Codespaces",
+      "goal": "Testar continuidade do ambiente entre máquinas e Codespaces.",
+      "status": "planned"
+    },
+    {
+      "phase": 5,
+      "name": "Banco de dados",
+      "goal": "Escolher e implementar uma arquitetura de dados adequada.",
+      "options": [
+        "SQLite",
+        "PostgreSQL em Docker",
+        "PostgreSQL remoto"
+      ],
+      "status": "planned"
+    },
+    {
+      "phase": 6,
+      "name": "Backend/API",
+      "goal": "Criar uma API para transformar o site em uma aplicação com dados persistentes.",
+      "status": "planned"
+    },
+    {
+      "phase": 7,
+      "name": "React + TypeScript",
+      "goal": "Evoluir o site para uma aplicação/dashboard.",
+      "status": "planned"
+    },
+    {
+      "phase": 8,
+      "name": "CI/CD + automação",
+      "goal": "Automatizar testes, build e deploy com GitHub Actions.",
+      "status": "planned"
+    },
+    {
+      "phase": 9,
+      "name": "IA",
+      "goal": "Adicionar IA depois dos fundamentos de desenvolvimento, APIs, backend, testes e deploy.",
+      "status": "future"
+    }
+  ],
+  "current_state": {
+    "phase": 1,
+    "phase_name": "GitHub Pages",
+    "phase_progress": 20,
+    "phase_mastery": 20,
+    "status": "in_progress",
+    "current_focus": "Entender a arquitetura do site e preparar o uso de progress.json como fonte de dados.",
+    "current_step": "Retomar a implementação do GitHub Pages simples após o estudo conceitual de HTTP, fetch, SOP, CORS, API, REST e SOAP.",
+    "next_step": "Criar/validar index.html, estrutura visual inicial e JavaScript que faça fetch do progress.json quando servido por HTTP.",
+    "last_save": "2026-08-16"
+  },
+  "project_files": {
+    "existing": [
+      "study-lab.md",
+      "CHECKLIST.md",
+      "Guide.txt",
+      "progress.json",
+      "README.md"
+    ],
+    "special_rules": {
+      "CHECKLIST.md": "Não usar como checklist oficial de acompanhamento.",
+      "Guide.txt": "Não usar como mecanismo oficial de acompanhamento.",
+      "README.md": "Manter simples por enquanto."
+    }
+  },
+  "progress_by_topic": {
+    "git": {
+      "progress": 8,
+      "mastery": 8,
+      "status": "started"
+    },
+    "github": {
+      "progress": 15,
+      "mastery": 15,
+      "status": "started"
+    },
+    "html": {
+      "progress": 80,
+      "mastery": 80,
+      "status": "strong_existing_knowledge"
+    },
+    "css": {
+      "progress": 80,
+      "mastery": 80,
+      "status": "strong_existing_knowledge"
+    },
+    "javascript_dom": {
+      "progress": 80,
+      "mastery": 80,
+      "status": "strong_existing_knowledge"
+    },
+    "http": {
+      "progress": 30,
+      "mastery": 30,
+      "status": "studied"
+    },
+    "fetch": {
+      "progress": 35,
+      "mastery": 35,
+      "status": "studied"
+    },
+    "same_origin_policy": {
+      "progress": 30,
+      "mastery": 30,
+      "status": "studied"
+    },
+    "cors": {
+      "progress": 30,
+      "mastery": 30,
+      "status": "studied"
+    },
+    "api": {
+      "progress": 25,
+      "mastery": 25,
+      "status": "studied"
+    },
+    "rest": {
+      "progress": 25,
+      "mastery": 25,
+      "status": "studied"
+    },
+    "soap": {
+      "progress": 20,
+      "mastery": 20,
+      "status": "studied"
+    },
+    "wsdl": {
+      "progress": 20,
+      "mastery": 20,
+      "status": "studied"
+    },
+    "graphql": {
+      "progress": 5,
+      "mastery": 5,
+      "status": "introduced"
+    },
+    "grpc": {
+      "progress": 5,
+      "mastery": 5,
+      "status": "introduced"
+    },
+    "websocket": {
+      "progress": 5,
+      "mastery": 5,
+      "status": "introduced"
+    },
+    "amqp": {
+      "progress": 5,
+      "mastery": 5,
+      "status": "introduced"
+    }
+  },
+  "decisions": [
+    "O projeto se chama Study_Lab.",
+    "Usar JSON em vez de YAML para o estado do projeto.",
+    "progress.json é a fonte oficial e portátil do progresso.",
+    "O site inicial não usará MkDocs nem dependerá de Python.",
+    "A primeira versão do site será simples, baseada em HTML/CSS/JS.",
+    "O JavaScript poderá consumir progress.json com fetch quando o site estiver sendo servido por HTTP.",
+    "Não haverá banco de dados na primeira versão; a arquitetura será preparada para futura evolução.",
+    "O usuário já possui experiência significativa com HTML, CSS e JavaScript/DOM, então esses fundamentos devem ser usados como ferramentas e não reaprendidos do zero.",
+    "REST, SOAP, GraphQL, gRPC, WebSocket e AMQP serão estudados como diferentes tecnologias/padrões/protocolos de comunicação, sem tratá-los como equivalentes."
+  ],
+  "technical_notes": {
+    "fetch": "API JavaScript para realizar requisições, normalmente HTTP/HTTPS.",
+    "file_protocol": "Abrir index.html diretamente com file:// pode impedir fetch de progress.json por políticas de segurança do navegador.",
+    "same_origin_policy": "Política de segurança do navegador que restringe acesso entre diferentes origins.",
+    "cors": "Mecanismo pelo qual um servidor pode declarar quais origins podem realizar determinadas requisições via navegador.",
+    "rest": "Estilo arquitetural para projetar APIs; APIs REST normalmente usam HTTP e frequentemente JSON.",
+    "soap": "Protocolo de mensagens estruturadas, normalmente usando XML; WSDL descreve formalmente o serviço.",
+    "wsdl": "Documento/contrato formal que descreve operações, parâmetros, tipos e estrutura de um serviço SOAP."
+  },
+  "current_learning_thread": {
+    "topic": "Comunicação entre sistemas",
+    "already_discussed": [
+      "HTTP request/response",
+      "fetch",
+      "GET/POST/PUT/PATCH/DELETE",
+      "origin",
+      "Same-Origin Policy",
+      "CORS",
+      "API",
+      "REST",
+      "RESTful",
+      "SOAP",
+      "WSDL",
+      "XML vs JSON",
+      "REST vs SOAP"
+    ],
+    "introduced_but_not_studied": [
+      "GraphQL",
+      "gRPC",
+      "WebSocket",
+      "AMQP"
+    ],
+    "rule": "Esse tópico é um desvio de estudo útil, mas o objetivo imediato continua sendo concluir a Fase 1 — GitHub Pages."
+  },
+  "checkpoint": {
+    "summary": "Projeto inicial criado e enviado ao GitHub. Fase 0 concluída. Fase 1 em andamento. O site ainda não foi implementado. O principal trabalho atual é criar a primeira versão do GitHub Pages e fazer o frontend consumir progress.json.",
+    "what_is_done": [
+      "Projeto inicial criado.",
+      "Repositório GitHub criado e sincronizado.",
+      "git status estava limpo e atualizado com origin/main.",
+      "progress.json criado.",
+      "Decisão de usar HTML/CSS/JS em vez de MkDocs/Python.",
+      "Conceitos fundamentais de fetch, HTTP, SOP, CORS, API, REST e SOAP estudados."
+    ],
+    "what_is_not_done": [
+      "index.html funcional no projeto.",
+      "JavaScript do site consumindo progress.json.",
+      "Layout inicial do site.",
+      "Deploy/configuração final do GitHub Pages."
+    ],
+    "next_action": "Retomar a implementação do GitHub Pages, começando pelo index.html e pela leitura do progress.json via fetch em um servidor HTTP."
+  }
+}

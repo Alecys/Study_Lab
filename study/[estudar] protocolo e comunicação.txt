@@ -1,0 +1,135 @@
+-----------------------------------------------------------
+-----------------------------------------------------------
+Protocolos, padrões e tecnologias de comunicação entre sistemas
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+Por exemplo:
+
+Situação	Possível escolha
+Frontend web → backend	REST
+API pública simples	REST
+Integração corporativa formal	SOAP
+Sistema legado SOAP	SOAP
+Comunicação interna de alta performance	gRPC
+Consultas muito flexíveis	GraphQL
+Comunicação em tempo real	WebSocket
+Processamento assíncrono	Mensageria
+
+Não é uma regra absoluta, mas é um mapa mental muito mais próximo da realidade profissional.
+
+\/--------------------------------------------------------
+
+1️⃣ Quem vai consumir?
+Browser?
+Mobile?
+Outro backend?
+Banco?
+Governo?
+Sistema legado?
+
+-----------------------------------------------------------
+
+15. E olha como isso muda sua forma de pensar
+
+Um iniciante pergunta:
+
+"REST ou SOAP, qual é melhor?"
+
+Um desenvolvedor mais experiente pergunta:
+
+"Quais são os requisitos da integração?"
+
+Um arquiteto pergunta:
+
+"Qual estilo de comunicação minimiza complexidade e atende aos requisitos funcionais e não funcionais do sistema?"
+
+Essa é a diferença.
+
+-------------------------------------------------------------
+
+Tecnologia	    O que é?	                                        Papel principal
+
+REST	        Estilo arquitetural	                                Como estruturar uma API
+SOAP	        Protocolo de mensagens	                            Como estruturar comunicação entre sistemas
+GraphQL	        Linguagem de consulta + especificação de API	    Cliente define quais dados quer
+gRPC	        Framework/RPC baseado em HTTP/2	                    Comunicação eficiente entre serviços
+WebSocket	    Protocolo de comunicação	                        Comunicação bidirecional persistente
+AMQP	        Protocolo de mensageria	                            Comunicação assíncrona via mensagens
+
+-------------------------------------------------------------
+
+   COMUNICAÇÃO
+                      │
+       ┌──────────────┼───────────────┐
+       │              │               │
+   API/Serviço    Conexão          Mensageria
+       │          persistente          │
+       │              │               │
+ REST SOAP       WebSocket           AMQP
+ GraphQL
+ gRPC
+
+
+ -------------------------------------------------------------
+
+ 🎯 Para sua cabeça de "analista de decisão"
+
+Quando alguém te disser:
+
+"Precisamos fazer dois sistemas conversarem."
+
+Você não começa pensando:
+
+"REST ou SOAP?"
+
+Você começa:
+
+1. A comunicação é síncrona?
+
+Preciso pedir → esperar resposta?
+
+Se sim, REST/gRPC/GraphQL/SOAP podem entrar na discussão.
+
+2. Preciso comunicação em tempo real?
+
+Servidor precisa mandar informação espontaneamente?
+
+→ WebSocket pode fazer sentido.
+
+3. Posso processar de forma assíncrona?
+
+Mando uma mensagem agora
+e outro serviço processa depois?
+
+→ Mensageria/AMQP pode fazer sentido.
+
+4. Preciso expor uma API para frontend/mobile?
+
+→ REST ou GraphQL podem ser candidatos.
+
+5. Preciso comunicação eficiente entre microsserviços?
+
+→ gRPC pode ser candidato.
+
+6. Preciso integrar com um sistema corporativo que já exige SOAP?
+
+→ SOAP. Não inventa moda. 😂
+
+ -------------------------------------------------------------
+
+ Essas tecnologias não são equivalentes entre si: algumas definem estilos arquiteturais, outras protocolos, linguagens de consulta, frameworks ou mecanismos de comunicação. Todas podem participar de arquiteturas em que diferentes sistemas precisam trocar dados ou mensagens.
+ 
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------

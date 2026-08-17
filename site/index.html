@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +12,77 @@
 
 <body>
 
-    <header>
-        <h1>Study Lab</h1>
-        <p>Meu laboratório de estudos e desenvolvimento.</p>
+    <header class="topbar">
+        <div>
+            <span class="label">STUDY_LAB</span>
+            <h1>Mapa do Conhecimento</h1>
+        </div>
+
+        <div class="phase-info">
+            <span>FASE ATUAL</span>
+            <strong id="phase-name">Carregando...</strong>
+        </div>
     </header>
+
 
     <main>
 
-        <section>
-            <h2>Progresso</h2>
+        <section class="hero">
 
-            <div id="progress-container">
-                <!-- O JavaScript vai inserir os dados aqui -->
+            <div class="hero-text">
+                <span class="label">MEU LABORATÓRIO DE ESTUDOS</span>
+
+                <h2>
+                    Aprender.<br>
+                    Experimentar.<br>
+                    Quebrar.<br>
+                    Entender.
+                </h2>
+
+                <p id="current-focus">
+                    Carregando estado atual...
+                </p>
             </div>
+
+
+            <div class="knowledge-map">
+
+                <svg id="knowledge-graph" viewBox="0 0 900 600">
+                    <!--
+                        O JavaScript vai criar:
+                        - conexões
+                        - nós
+                        - textos
+                    -->
+                </svg>
+
+            </div>
+
+        </section>
+
+
+        <section class="progress-section">
+
+            <div class="section-header">
+                <div>
+                    <span class="label">PROGRESSO</span>
+                    <h2>Estado atual</h2>
+                </div>
+
+                <strong id="progress-value">0%</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
         </section>
 
     </main>
 
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
