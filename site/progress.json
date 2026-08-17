@@ -31,13 +31,13 @@
       "phase": 1,
       "name": "GitHub Pages",
       "goal": "Criar o site de estudos simples, sem MkDocs/Python, usando HTML/CSS/JS e dados em JSON.",
-      "status": "in_progress"
+      "status": "completed"
     },
     {
       "phase": 2,
       "name": "Node.js + npm",
       "goal": "Aprender Node.js, npm, package.json, node_modules, scripts, dependências e Vite.",
-      "status": "planned"
+      "status": "in_progress"
     },
     {
       "phase": 3,
@@ -88,40 +88,44 @@
     }
   ],
   "current_state": {
-    "phase": 1,
-    "phase_name": "GitHub Pages",
-    "phase_progress": 20,
-    "phase_mastery": 20,
+    "phase": 2,
+    "phase_name": "Node.js + npm",
+    "phase_progress": 0,
+    "phase_mastery": 0,
     "status": "in_progress",
-    "current_focus": "Entender a arquitetura do site e preparar o uso de progress.json como fonte de dados.",
-    "current_step": "Retomar a implementação do GitHub Pages simples após o estudo conceitual de HTTP, fetch, SOP, CORS, API, REST e SOAP.",
-    "next_step": "Criar/validar index.html, estrutura visual inicial e JavaScript que faça fetch do progress.json quando servido por HTTP.",
-    "last_save": "2026-08-16"
+    "current_focus": "Começar a entender Node.js e o ecossistema npm antes de introduzir Vite.",
+    "current_step": "Estudar o que é Node.js, por que ele existe no fluxo de desenvolvimento frontend e como ele se relaciona com npm.",
+    "next_step": "Verificar Node.js e npm e realizar os primeiros experimentos com node, npm e package.json.",
+    "last_save": "2026-08-17"
   },
   "project_files": {
     "existing": [
-      "study-lab.md",
-      "CHECKLIST.md",
-      "Guide.txt",
-      "progress.json",
-      "README.md"
+      "index.html",
+      "README.md",
+      "server.bat",
+      "site/progress.json",
+      "site/script.js",
+      "site/style.css",
+      "docs/",
+      "study/"
     ],
     "special_rules": {
       "CHECKLIST.md": "Não usar como checklist oficial de acompanhamento.",
       "Guide.txt": "Não usar como mecanismo oficial de acompanhamento.",
-      "README.md": "Manter simples por enquanto."
+      "README.md": "Manter simples por enquanto.",
+      "progress.json": "A fonte oficial/portátil do estado do projeto deve ser preservada; não criar fontes concorrentes de acompanhamento."
     }
   },
   "progress_by_topic": {
     "git": {
-      "progress": 8,
-      "mastery": 8,
-      "status": "started"
+      "progress": 20,
+      "mastery": 20,
+      "status": "studied_and_used"
     },
     "github": {
-      "progress": 15,
-      "mastery": 15,
-      "status": "started"
+      "progress": 35,
+      "mastery": 35,
+      "status": "studied_and_used"
     },
     "html": {
       "progress": 80,
@@ -134,24 +138,24 @@
       "status": "strong_existing_knowledge"
     },
     "javascript_dom": {
-      "progress": 80,
-      "mastery": 80,
+      "progress": 85,
+      "mastery": 85,
       "status": "strong_existing_knowledge"
     },
     "http": {
-      "progress": 30,
-      "mastery": 30,
-      "status": "studied"
+      "progress": 40,
+      "mastery": 40,
+      "status": "studied_and_applied"
     },
     "fetch": {
-      "progress": 35,
-      "mastery": 35,
-      "status": "studied"
+      "progress": 50,
+      "mastery": 50,
+      "status": "studied_and_applied"
     },
     "same_origin_policy": {
-      "progress": 30,
-      "mastery": 30,
-      "status": "studied"
+      "progress": 35,
+      "mastery": 35,
+      "status": "studied_and_applied"
     },
     "cors": {
       "progress": 30,
@@ -197,6 +201,36 @@
       "progress": 5,
       "mastery": 5,
       "status": "introduced"
+    },
+    "node_js": {
+      "progress": 0,
+      "mastery": 0,
+      "status": "not_started"
+    },
+    "npm": {
+      "progress": 0,
+      "mastery": 0,
+      "status": "not_started"
+    },
+    "package_json": {
+      "progress": 0,
+      "mastery": 0,
+      "status": "not_started"
+    },
+    "node_modules": {
+      "progress": 0,
+      "mastery": 0,
+      "status": "not_started"
+    },
+    "npm_scripts": {
+      "progress": 0,
+      "mastery": 0,
+      "status": "not_started"
+    },
+    "vite": {
+      "progress": 0,
+      "mastery": 0,
+      "status": "not_started"
     }
   },
   "decisions": [
@@ -205,10 +239,13 @@
     "progress.json é a fonte oficial e portátil do progresso.",
     "O site inicial não usará MkDocs nem dependerá de Python.",
     "A primeira versão do site será simples, baseada em HTML/CSS/JS.",
-    "O JavaScript poderá consumir progress.json com fetch quando o site estiver sendo servido por HTTP.",
+    "O JavaScript consome progress.json com fetch quando o site é servido por HTTP.",
     "Não haverá banco de dados na primeira versão; a arquitetura será preparada para futura evolução.",
     "O usuário já possui experiência significativa com HTML, CSS e JavaScript/DOM, então esses fundamentos devem ser usados como ferramentas e não reaprendidos do zero.",
-    "REST, SOAP, GraphQL, gRPC, WebSocket e AMQP serão estudados como diferentes tecnologias/padrões/protocolos de comunicação, sem tratá-los como equivalentes."
+    "REST, SOAP, GraphQL, gRPC, WebSocket e AMQP serão estudados como diferentes tecnologias/padrões/protocolos de comunicação, sem tratá-los como equivalentes.",
+    "A Fase 1 foi concluída após o site funcionar localmente e no GitHub Pages.",
+    "O GitHub Pages foi validado com o progress.json retornando HTTP 200.",
+    "A Fase 2 começa por Node.js e npm; Vite será estudado depois dos fundamentos de npm."
   ],
   "technical_notes": {
     "fetch": "API JavaScript para realizar requisições, normalmente HTTP/HTTPS.",
@@ -217,10 +254,12 @@
     "cors": "Mecanismo pelo qual um servidor pode declarar quais origins podem realizar determinadas requisições via navegador.",
     "rest": "Estilo arquitetural para projetar APIs; APIs REST normalmente usam HTTP e frequentemente JSON.",
     "soap": "Protocolo de mensagens estruturadas, normalmente usando XML; WSDL descreve formalmente o serviço.",
-    "wsdl": "Documento/contrato formal que descreve operações, parâmetros, tipos e estrutura de um serviço SOAP."
+    "wsdl": "Documento/contrato formal que descreve operações, parâmetros, tipos e estrutura de um serviço SOAP.",
+    "response_ok": "response.ok indica se a resposta HTTP possui status na faixa de sucesso. Uma resposta 404/500 não rejeita automaticamente a Promise do fetch; por isso pode ser necessário verificar response.ok e lançar um erro.",
+    "github_pages": "O site Study_Lab foi publicado no GitHub Pages e o fetch do progress.json foi validado funcionando em produção."
   },
   "current_learning_thread": {
-    "topic": "Comunicação entre sistemas",
+    "topic": "Node.js + npm",
     "already_discussed": [
       "HTTP request/response",
       "fetch",
@@ -234,7 +273,11 @@
       "SOAP",
       "WSDL",
       "XML vs JSON",
-      "REST vs SOAP"
+      "REST vs SOAP",
+      "JSON como fonte de dados do frontend",
+      "JSON → JavaScript → DOM/SVG",
+      "response.ok e tratamento explícito de status HTTP",
+      "GitHub Pages e fetch em produção"
     ],
     "introduced_but_not_studied": [
       "GraphQL",
@@ -242,24 +285,33 @@
       "WebSocket",
       "AMQP"
     ],
-    "rule": "Esse tópico é um desvio de estudo útil, mas o objetivo imediato continua sendo concluir a Fase 1 — GitHub Pages."
+    "rule": "O tópico de comunicação entre sistemas foi um desvio de estudo útil e a Fase 1 foi concluída. O objetivo imediato agora é iniciar a Fase 2 — Node.js + npm."
   },
   "checkpoint": {
-    "summary": "Projeto inicial criado e enviado ao GitHub. Fase 0 concluída. Fase 1 em andamento. O site ainda não foi implementado. O principal trabalho atual é criar a primeira versão do GitHub Pages e fazer o frontend consumir progress.json.",
+    "summary": "Fase 0 concluída e Fase 1 concluída. O Study_Lab possui uma primeira versão funcional publicada no GitHub Pages. O frontend usa HTML/CSS/JS, consome progress.json via fetch e monta conteúdo visual e um mapa SVG dinamicamente a partir dos dados. O fetch foi validado localmente e no GitHub Pages, incluindo tratamento explícito de respostas HTTP com response.ok. A avaliação conceitual da Fase 1 indicou domínio muito bom para o objetivo da etapa. O próximo passo é iniciar a Fase 2 — Node.js + npm.",
     "what_is_done": [
       "Projeto inicial criado.",
       "Repositório GitHub criado e sincronizado.",
-      "git status estava limpo e atualizado com origin/main.",
-      "progress.json criado.",
-      "Decisão de usar HTML/CSS/JS em vez de MkDocs/Python.",
-      "Conceitos fundamentais de fetch, HTTP, SOP, CORS, API, REST e SOAP estudados."
+      "Git usado para versionar as alterações.",
+      "progress.json criado e usado como fonte de dados.",
+      "Site inicial implementado com HTML, CSS e JavaScript.",
+      "fetch() usado para carregar progress.json.",
+      "JSON transformado em conteúdo visual no DOM.",
+      "Dados de progress_by_topic usados para gerar nós, conexões e textos em SVG.",
+      "Servidor HTTP local usado para testar fetch.",
+      "Erro HTTP 404 provocado propositalmente e tratado com response.ok, throw e catch.",
+      "GitHub Pages configurado e site publicado.",
+      "progress.json validado no GitHub Pages com resposta HTTP 200.",
+      "Fase 1 avaliada e considerada concluída."
     ],
     "what_is_not_done": [
-      "index.html funcional no projeto.",
-      "JavaScript do site consumindo progress.json.",
-      "Layout inicial do site.",
-      "Deploy/configuração final do GitHub Pages."
+      "Estudo de Node.js.",
+      "Estudo de npm.",
+      "Criação e estudo de package.json.",
+      "Estudo de node_modules e dependências.",
+      "Estudo de npm scripts.",
+      "Introdução prática ao Vite."
     ],
-    "next_action": "Retomar a implementação do GitHub Pages, começando pelo index.html e pela leitura do progress.json via fetch em um servidor HTTP."
+    "next_action": "Iniciar a Fase 2 estudando Node.js e npm, começando pela instalação/verificação das versões e por experimentos básicos com node e npm."
   }
 }
