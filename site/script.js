@@ -1,4 +1,4 @@
-fetch("progress.json")
+fetch("site/progress.json")
     .then(response => {
 
         if (!response.ok) {
